@@ -9,7 +9,7 @@ else
 echo "No, no existe" & mkdir /usr/share/backgrounds/ & cd /usr/share/backgrounds/
 fi
 
-wget -i -c -N /tmp/links.txt
+wget -i /tmp/links.txt -N
 
 rm /tmp/links.txt
 
