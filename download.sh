@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /tmp
-git clone https://github.com/angel-elda/Fondos-Programadores/blob/master/links.txt
+wget https://raw.githubusercontent.com/angel-elda/Fondos-Programadores/master/links.txt
 
 if [ -d /usr/share/backgrounds/ ];
 then
@@ -10,7 +10,7 @@ else
 echo "No, no existe" & mkdir /usr/share/backgrounds/ & cd /usr/share/backgrounds/
 fi
 
-wget -i /tmp/links.txt -N
+wget -i https://raw.githubusercontent.com/angel-elda/Fondos-Programadores/master/links.txt -N
 
 rm /tmp/links.txt
 
