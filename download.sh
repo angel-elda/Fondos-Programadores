@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cp links.txt /tmp/links.txt
+cd /tmp
+git clone https://github.com/angel-elda/Fondos-Programadores/blob/master/links.txt
 
 if [ -d /usr/share/backgrounds/ ];
 then
